@@ -6,5 +6,5 @@ module CrystalShardsTestWindowsLib
   OS_VERSION = {{ `cmd /C wmic os get Caption,CSDVersion /value`.stringify.chomp }}
   {% else %}
   OS_VERSION = nil
-  {% %}
+  {% end %}
 end
